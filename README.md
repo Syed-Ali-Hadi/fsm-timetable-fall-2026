@@ -29,42 +29,6 @@
 - Dark and light themes
 - Installable on Android and iPhone home screens
 
-## 🚀 Run locally
-
-```powershell
-npm install
-npm run dev
-```
-
-Open the local address shown by Vite, normally `http://localhost:5173/`.
-
-> Local Vite preview uses the bundled timetable snapshot. The live `/api/schedule` endpoint runs after deployment on Vercel.
-
-## ✅ Production check
-
-```powershell
-npm run build
-npm run preview
-```
-
-## ☁️ Deploy on Vercel
-
-Use these settings:
-
-- **Framework:** Vite
-- **Install command:** `npm install`
-- **Build command:** `npm run build`
-- **Output directory:** `dist`
-
-Keep these files in the repository:
-
-```text
-api/schedule.py
-requirements.txt
-```
-
-The Vercel function checks the public Google Sheet and caches the result briefly. The app falls back to the bundled timetable if the live source is unavailable.
-
 ## 📱 Install on a phone
 
 ### Android — Chrome
