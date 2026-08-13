@@ -1,87 +1,58 @@
-<div align="center">
-
-# 📅 FSM Timetable — Fall 2026
-
-### A fast, responsive timetable app for FAST School of Management, Islamabad.
-
-[![Live App](https://img.shields.io/badge/Live_App-Open_Timetable-for-the-badge](https://fsm-timetable-fall-2026.vercel.app/)
-[![React](https://img.shields.io/badge/React-style=for-the-badge&logo=react&logoColor=black](https://react.dev/)
-[![Vercel](https://img.shields.iooyed_on-Vercel-black?style=for-the-badge&logo=vercel](https://vercel.com/)
-
-</div>
-
+📅 FSM Timetable — Fall 2026
+<p align="center">
+  <strong>A fast, responsive timetable app for FAST School of Management, Islamabad.</strong>
+</p>
+<p align="center">
+  <a href="https://fsm-timetable-fall-2026.vercel.app/">
+    <img alt="Open Live App" src="https://img.shields.io/badge/Open_Live_App-38dfdc?style=for-the-badge&logo=vercel&logoColor=061016">
+  </a>
+  <img alt="React" src="https://img.shields.io/badge/React-19-61DAFB?style=for-the-badge&logo=react&logoColor=061016">
+  <img alt="Vite" src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite&logoColor=white">
+  <img alt="Vercel" src="https://img.shields.io/badge/Deployed_on-Vercel-black?style=for-the-badge&logo=vercel">
+</p>
 ---
-
-## ✨ About
-
-**FSM Timetable** is a public timetable utility for students of the **FAST School of Management, Islamabad Campus**.
-
-It makes the Fall 2026 timetable easier to search, filter, save, and access across mobile phones, tablets, and desktop computers.
-
-### 🌐 [Open the Live App](https://fsm-timetable-fall-2026.vercel.app/)
-
----
-
-## 🚀 Features
-
-- 🎓 Filter classes by degree program and section
-- 🔍 Search by course, room, section, teacher, or course code
-- 📆 Automatically display the current weekday
-- 🗓️ Switch between weekdays or view all classes
-- 💾 Save individual classes
-- ⚡ Save an entire section with one button
-- 👨‍🏫 View instructor names on class cards
-- 🚪 Check free rooms by weekday and time slot
-- 🌙 Dark mode and ☀️ light mode
-- 📱 Responsive mobile-first interface
-- 📲 Installable on Android and iPhone
-- 🔄 Live Google Sheet timetable connection
-- 🛡️ Audited timetable fallback if live data is unavailable
-- 🔐 No login or account required
-
----
-
-## 🏫 Supported Programs
-
-- Bachelor of Business Administration — **BBA**
-- BS Business Analytics — **BSBA**
-- BS Accounting & Finance — **BSAF**
-- BS Financial Technology — **BSFT**
-
----
-
-## 🧾 Class Information
-
-Every timetable card clearly displays:
-
-- Course code
-- Course title
-- Class or lab type
-- Start and end time
-- Section
-- Room or block
-- Instructor name
-
-If an instructor is not confirmed in the available course plan, the app displays **TBA** instead of assigning an unverified name.
-
----
-
-## 🧰 Built With
-
-- React
-- Vite
-- JavaScript
-- CSS
-- Lucide Icons
-- Vercel Serverless Functions
-- Google Sheets CSV data
-- Browser Local Storage
-
----
-
-## 💻 Run Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/Syed-Ali-Hadi/fsm-timetable-fall-2026.git
+✨ Features
+Degree → semester → section filtering
+Repeating-course sections identified separately
+Direct search by section, course, room, or teacher
+Save individual classes or all matching results
+Current weekday shown first in Saved Classes
+Clear-day message when no saved class exists
+Free-room finder based on timetable occupancy
+Live Google Sheet timetable with bundled Excel fallback
+Mobile-first responsive interface
+Dark and light themes
+Installable on Android and iPhone home screens
+🚀 Run locally
+```powershell
+npm install
+npm run dev
+```
+Open the local address shown by Vite, normally `http://localhost:5173/`.
+> Local Vite preview uses the bundled timetable snapshot. The live `/api/schedule` endpoint runs after deployment on Vercel.
+✅ Production check
+```powershell
+npm run build
+npm run preview
+```
+☁️ Deploy on Vercel
+Use these settings:
+Framework: Vite
+Install command: `npm install`
+Build command: `npm run build`
+Output directory: `dist`
+Keep these files in the repository:
+```text
+api/schedule.py
+requirements.txt
+```
+The Vercel function checks the public Google Sheet and caches the result briefly. The app falls back to the bundled timetable if the live source is unavailable.
+📱 Install on a phone
+Android — Chrome
+Open the deployed website, tap the three-dot menu, then choose Install app or Add to Home screen.
+iPhone — Safari
+Open the deployed website, tap Share, then choose Add to Home Screen.
+🔗 Live app
+Open FSM Timetable
+👤 Feedback
+Connect with Syed Ali Hadi on LinkedIn
