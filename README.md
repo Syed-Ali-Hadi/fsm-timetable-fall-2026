@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31048247/README.md)
 # 📅 FSM Timetable — Fall 2026
 
 <p align="center">
